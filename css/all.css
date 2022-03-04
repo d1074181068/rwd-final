@@ -897,6 +897,15 @@ img {
     color: white;
 }
 
+@media(max-width:950px) {
+    .cart-content {
+        padding: 50px 10px 0px;
+    }
+    .menu-food li {
+        margin-right: 10px;
+    }
+}
+
 @media(max-width:820px) {
     .cart-content {
         padding: 50px 20px 0px;

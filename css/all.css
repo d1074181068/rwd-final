@@ -705,7 +705,7 @@ img {
 }
 
 .menu-detail {
-    width: 80%;
+    width: 75%;
 }
 
 .menu-nav {
@@ -895,6 +895,15 @@ img {
 .food-info a:hover {
     background-color: #FF5E45;
     color: white;
+}
+
+@media(max-width:950px) {
+    .cart-content {
+        padding: 50px 10px 0px;
+    }
+    .menu-food li {
+        margin-right: 10px;
+    }
 }
 
 @media(max-width:820px) {

@@ -745,6 +745,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 .cart-link .link-text {
@@ -757,6 +758,20 @@ img {
 
 .cart-link a:hover {
     text-decoration: underline;
+}
+
+.cart-link a>span {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: white;
+    text-align: center;
+    background-color: #FF5E45;
+    border: none;
+    border-radius: 50%;
 }
 
 .cart-link .fas {
@@ -777,6 +792,51 @@ img {
     margin-bottom: 20px;
     box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
     position: relative;
+}
+
+.ribbon-wrap {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+
+.ribbon {
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    top: 18px;
+    width: 118px;
+    background-color: #00CC99;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon:before {
+    content: "";
+    border-top: 4px solid #078F6D;
+    border-left: 4px solid #078F6D;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 5px;
+}
+
+.ribbon:after {
+    content: "";
+    border-top: 4px solid #078F6D;
+    border-left: 4px solid transparent;
+    border-right: 4px solid #078F6D;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    right: 4px;
 }
 
 .food-info {

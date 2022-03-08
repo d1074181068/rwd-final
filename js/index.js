@@ -27,38 +27,37 @@ $(document).ready(function() {
     });
 
     //header 選單hover效果
-    $('.mu-list-bt').hover(function() {
-        $('.mu-list-bt').css('background-color', 'orange');
+    $('.header-menu>li>a').hover(function() {
+        $(this).css('background-color', 'orange');
     }, function() {
-        $('.mu-list-bt').css('background-color', 'black');
+        $(this).css('background-color', 'black');
     });
+
+    //選單點擊效果
     $('.mu-list-bt').click(function(e) {
         e.preventDefault();
-        $('.mu-list-bt').css('background-color', 'orange');
         if ($('.mu-list-bt > .fas').attr('class') == 'fas fa-angle-right') {
             $('.mu-list-bt > .fas').attr('class', 'fas fa-angle-down')
+            $('.mu-list-bt').css('background-color', 'orange')
         } else {
             $('.mu-list-bt > .fas').attr('class', 'fas fa-angle-right')
+            $('.mu-list-bt').css('background-color', 'black')
         }
         $('.user-bt >.fas.fa-angle-down').attr('class', 'fas fa-angle-right');
         $('.menu-list').slideToggle();
         $('.user').slideUp();
-    });
-    $('.user-bt').hover(function() {
-        $('.user-bt').css('background-color', 'orange');
-    }, function() {
-        $('.user-bt').css('background-color', 'black');
+
     });
     $('.user-bt').click(function(e) {
         e.preventDefault();
-        $('.user-bt').css('background-color', 'orange');
         if ($('.user-bt > .fas').attr('class') == 'fas fa-angle-right') {
             $('.user-bt > .fas').attr('class', 'fas fa-angle-down');
+            $('.user-bt').css('background-color', 'orange')
         } else {
             $('.user-bt > .fas').attr('class', 'fas fa-angle-right');
+            $('.user-bt').css('background-color', 'black')
         }
         $('.mu-list-bt >.fas.fa-angle-down').attr('class', 'fas fa-angle-right');
-        $('.listopen').attr('class', 'mu-list-bt');
         $('.user').slideToggle();
         $('.menu-list').slideUp();
     });

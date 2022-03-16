@@ -271,6 +271,9 @@ img {
 }
 
 @media(max-width:820px) {
+    .feature {
+        padding: 140px 0 30px;
+    }
     .feature h2 {
         left: 36%;
     }
@@ -358,10 +361,9 @@ img {
 }
 
 .o-comment h2 {
-    max-width: 168px;
     font-size: 24px;
     color: #3D1101;
-    margin: 0 auto;
+    text-align: center;
     margin-bottom: 40px;
 }
 
